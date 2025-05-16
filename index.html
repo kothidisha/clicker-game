@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Orb Clicker Game</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <!-- Start Screen -->
+  <div id="startScreen">
+    <h1>💎 Welcome to Orb Clicker</h1>
+    <p>Click the orb as many times as you can in 30 seconds!</p>
+    <button onclick="startGame()">Start Game</button>
+  </div>
+
+  <!-- Game Screen -->
+  <div id="gameContainer">
+    <h1>💎 Orb Clicker</h1>
+    <p>Time: <span id="time">30</span>s | Score: <span id="score">0</span></p>
+    <div id="gameArea">
+      <div id="orb"></div>
+    </div>
+    <div id="resultScreen" class="hidden">
+      <h2>🎉 Game Over!</h2>
+      <p>You scored <span id="finalScore"></span> points.</p>
+      <button onclick="restartGame()">Play Again</button>
+    </div>
+  </div>
+
+  <!-- Click Sound -->
+  <audio id="clickSound" src="https://www.soundjay.com/button/beep-07.mp3" preload="auto"></audio>
+
+  <script src="script.js"></script>
+</body>
+</html>
